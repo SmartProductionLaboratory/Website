@@ -1,0 +1,51 @@
+@media (max-width:320px){
+    #research{
+        
+    }
+}
+
+@media (min-width:551px){
+    #research{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+.mid{
+    border-right: 1px solid lightgrey;
+}
+
+
+#research{
+    background-color:#fff0bc6e;
+    text-align: center;
+    /* width: 100%; */
+    height: 500px;
+}
+
+.icon{
+    display: inline-block;
+}
+
+.description{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#researchTitle{
+    text-align: center;
+    height: 150px;
+    padding-top: 50px;
+}
+
+.horizontalImg figcaption{
+    margin-top: 23px;
+}
+
+.description_text{
+    text-align: left;
+}
+
+.wbackground{
+    background-color: white;
+}

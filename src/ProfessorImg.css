@@ -1,0 +1,29 @@
+#proPhoto{
+    height:227px;
+    width: 191px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    margin:auto;
+}
+
+.proName{
+    text-align:center;
+    width: 191px;
+    margin:auto;
+    margin-top: 30px;
+    
+}
+
+@media (max-width:800px){
+    #proPhoto{
+        height: 114px;
+        width: 95px;
+        border-radius: 5px;
+        margin:auto;
+    }
+
+    .proName{
+        width:150px;
+        /* margin:auto; */
+    }
+}

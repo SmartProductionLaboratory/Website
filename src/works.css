@@ -1,0 +1,38 @@
+#Works{
+    background-color:#fff0bc6e;
+    height: 1000px;
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.title{
+    text-align: center;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width:320px){
+    #Works{
+        height: 1500px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width:321px) and (max-width:530px){
+    #Works{
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 1300px;
+    }
+}
+
+@media (min-width:531px) and (max-width:800px){
+    #Works{
+        padding-left: 75px;
+        padding-right: 75px;
+        height: 1200px;
+    }
+}

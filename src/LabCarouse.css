@@ -1,0 +1,13 @@
+#photos{
+    width: 100%;
+    margin: auto;;
+    margin-top: 60px;
+}
+
+@media (min-width:800px){
+    #photos{
+        width: 50%;
+        margin: auto;
+        margin-top: 60px;
+    }
+}

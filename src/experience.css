@@ -1,0 +1,21 @@
+@media (min-width:801px){
+    .experience{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .studyExp{
+        width: 300px;
+        margin:auto;
+    }
+
+    .studyExpTitle{
+        text-align: center;
+    }
+}
+
+@media (min-width:280px) and (max-width:800px){
+    .ExpTitle{
+        text-align: center;
+    }
+}

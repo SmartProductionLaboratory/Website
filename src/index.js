@@ -1,12 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'semantic-ui-css/semantic.min.css'
 import App from './App';
+import Home from './HomeContent'
+import Professor from './Professor'
+import Works from './works'
+import Experience from './experience'
+import MSstudent from './MSstudents'
+import UGstudent from './UGstudent'
+import LabCarousel from './LabCarousel'
+import Footer from './footer'
 import * as serviceWorker from './serviceWorker';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App />, */}
+    <Home />
+    <Works/>
+    <Professor/>
+    <Experience/>
+    <MSstudent/>
+    <UGstudent/>
+    <LabCarousel/>
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );

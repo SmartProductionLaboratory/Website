@@ -1,0 +1,41 @@
+.Professor{
+    height: 550px;
+    padding-top: 100px;
+    
+}
+
+.info-item{
+    margin-bottom: 20px;
+}
+
+@media (max-width:320px){
+    .Professor{
+        height: 800px;
+    }
+
+    .com-info{
+        width: 250px;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:321px) and (max-width:800px){
+    .Professor{
+        /* padding-left: 30px; */
+        height: 650px;
+        /* padding-right: 30px; */
+    }
+
+    .com-info{
+        /* margin-top: 30px; */
+    }
+}
+
+@media (min-width:801px){
+    .Professor{
+        padding-left: 90px;
+        padding-right:90px;
+    }
+}
+

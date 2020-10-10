@@ -1,0 +1,12 @@
+#MasterStudents{
+    margin-top: 50px;
+}
+
+
+@media (min-width:1025px){
+    .students{
+        width: 50%;
+        margin: auto;
+    }
+}
+
