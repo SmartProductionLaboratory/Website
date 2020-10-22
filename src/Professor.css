@@ -23,7 +23,7 @@
 @media (min-width:321px) and (max-width:800px){
     .Professor{
         /* padding-left: 30px; */
-        height: 650px;
+        height: auto;
         /* padding-right: 30px; */
     }
 

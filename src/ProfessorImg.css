@@ -1,9 +1,12 @@
-#proPhoto{
-    height:227px;
+#photo{
+    /* height:215px; */
     width: 191px;
     border: 1px solid lightgrey;
     border-radius: 20px;
     margin:auto;
+}
+#photo{
+    margin: auto;
 }
 
 .proName{
@@ -15,9 +18,9 @@
 }
 
 @media (max-width:800px){
-    #proPhoto{
-        height: 114px;
-        width: 95px;
+    #photo{
+        /* height: 90px; */
+        width: 80px;
         border-radius: 5px;
         margin:auto;
     }

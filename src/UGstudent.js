@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 import Table from 'react-bootstrap/Table'
 import { Divider } from 'semantic-ui-react'
 import './MSstudents.css'
-import testAvatar from './imgs/DSC00098.png'
+import egimg from './imgs/DSC00098.png'
 import Student from './student'
 
 class UGstudents extends React.Component{
@@ -15,7 +15,7 @@ class UGstudents extends React.Component{
             {
                 "name" : "林友鈞",
                 "eng_name" : "Eugene",
-                "photo" : testAvatar
+                "photo" : egimg
             }
         ];
         this.state = {
@@ -33,6 +33,9 @@ class UGstudents extends React.Component{
                 </Row>
                 <Row>
                     <Col>
+                        <Student img={egimg} name={"林友鈞"} engName={"Eugene"}/>
+                    </Col>
+                    {/* <Col>
                         <Student img={testAvatar} name={"林友鈞"} engName={"Eugene"}/>
                     </Col>
                     <Col>
@@ -43,10 +46,7 @@ class UGstudents extends React.Component{
                     </Col>
                     <Col>
                         <Student img={testAvatar} name={"林友鈞"} engName={"Eugene"}/>
-                    </Col>
-                    <Col>
-                        <Student img={testAvatar} name={"林友鈞"} engName={"Eugene"}/>
-                    </Col>                    
+                    </Col>                     */}
                 </Row>
             </Container>
         </>);
