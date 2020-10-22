@@ -59,7 +59,7 @@ class Experience extends React.Component{
                     <Row>
                         <Col>
                             <div class="studyExp">
-                                <h2 className="studyExpTitle">學經歷</h2>
+                                <h2 className="studyExpTitle">學歷</h2>
                                 <List bulleted>
                                     {this.state.researchExp.map((value, index)=>{
                                         return <List.Item>{value}</List.Item>
