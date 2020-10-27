@@ -7,6 +7,9 @@ import { Divider } from 'semantic-ui-react'
 import './MSstudents.css'
 import egimg from './imgs/DSC00098.png'
 import cyiimg from './imgs/741474.png'
+import ytimg from './imgs/yitzu.png'
+import mimg from './imgs/ming.png'
+import uyimg from './imgs/uy.png'
 import Student from './student'
 
 class UGstudents extends React.Component{
@@ -39,6 +42,16 @@ class UGstudents extends React.Component{
 					<Col>
 						<Student img={cyiimg} name={"許湘苡"} engName={""}/>
 					</Col>
+					<Col>
+						<Student img={uyimg} name={"鍾昀諺"} engName={""}/>
+					</Col>
+					<Col>
+						<Student img={ytimg} name={"王顗慈"} engName={""}/>
+					</Col>
+					<Col>
+						<Student img={mimg} name={"張閔政"} engName={""}/>
+					</Col>
+					
                     {/* <Col>
                         <Student img={testAvatar} name={"林友鈞"} engName={"Eugene"}/>
                     </Col>
