@@ -18,11 +18,11 @@ class research extends React.Component{
             research :{
                 "Data Mining" : {
                     "title" : "Data Mining 資料探勘",
-                    "text" : "Data mining is a process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems. We use data mining technique to improve efficiency of manufacturing processes"
+                    "text" : "我們透過收集批貨於各站點的生產資料，進行資料篩選、遺漏值處理與資料分類等資料探勘的技術後建立良率預測模型，以分析影響批貨最終良率的因子，提升製造業生產線的良率。"
                 },
                 "Scheduling" : {
                     "title" : "Scheduling 排程",
-                    "text" : "Scheduling is the process of arranging, controlling and optimizing work and workloads in a production process or manufacturing process."
+                    "text" : "隨著半導體製程隨著科技發展愈趨繁複，我們開發高效率的演算法解決製造業瓶頸產線排程問題，同時考量製程繁雜的生產限制，並在短時間內得到滿意解或是最佳解。"
                 }
             }   
         }
@@ -30,7 +30,7 @@ class research extends React.Component{
     }
     render(){
     
-        if(this.state.width < 1200){
+        if(this.state.width > 500){
             return (
                 <div className="wbackground">
                     <Container id="research" fluid={true}>
@@ -60,9 +60,11 @@ class research extends React.Component{
                         </Row>
                         <Row>
                             
-                            <Description img={DataminingImg} title={this.state.research["Data Mining"]["title"]} text={this.state.research["Data Mining"]["text"]} divider={true}/>
-                            <Description img={SchdeulingImg} title={this.state.research["Scheduling"]["title"]} text={this.state.research["Scheduling"]["text"]} className="horizontalImg" />
-                            
+                            <Description img={DataminingImg} title={this.state.research["Data Mining"]["title"]} text={this.state.research["Data Mining"]["text"]} small={true}/>
+                        </Row>
+                        <br/><br/>
+                        <Row>
+                            <Description img={SchdeulingImg} title={this.state.research["Scheduling"]["title"]} text={this.state.research["Scheduling"]["text"]} className="horizontalImg" small={true}/>
                         </Row>
                     </Container>
                 </div>

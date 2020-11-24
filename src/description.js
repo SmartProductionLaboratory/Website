@@ -1,6 +1,9 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import {Image} from 'semantic-ui-react'
+import "./description.css"
 
 class Description extends React.Component{
     constructor(props){
@@ -8,23 +11,38 @@ class Description extends React.Component{
     }
 
     render(){
-        let col;
-        if(this.props.divider){
-            col = <Col className="mid"><p className="description_text">{this.props.text}</p></Col>;
+        if(this.props.small){
+            return (
+                <>
+                <Col>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <Image className="icon" src={this.props.img} size='tiny' wrapped/>
+                                <figcaption>{this.props.title}</figcaption>
+                            </Col>
+                        </Row>
+                        <br/>
+                        <Row>
+                            <Col><p className="description_text">{this.props.text}</p></Col>
+                        </Row>
+                    </Container>
+                </Col>
+     
+                </>
+            );
         }else{
-            col = <Col><p className="description_text">{this.props.text}</p></Col>
-        }
-        return (
+            return (
             <>
-            <Col>
-                <div>
+                <Col>
                     <Image className="icon" src={this.props.img} size='tiny' wrapped/>
                     <figcaption>{this.props.title}</figcaption>
-                </div>
-            </Col>
-            {col}
+                </Col>
+                <Col><p className="description_text">{this.props.text}</p></Col>
             </>
-        );
+            );
+        }
+        
     }
 }
 

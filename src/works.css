@@ -1,9 +1,10 @@
 #Works{
     background-color:#fff0bc6e;
-    height: 900px;
+    /* height: 900px; */
     padding-top: 30px;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 50px;
 }
 
 .title{
@@ -15,7 +16,7 @@
 
 @media (max-width:320px){
     #Works{
-        height: 1500px;
+        /* height: 1500px; */
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -25,7 +26,7 @@
     #Works{
         padding-left: 0px;
         padding-right: 0px;
-        height: 1300px;
+        /* height: 1300px; */
     }
 }
 
@@ -34,7 +35,7 @@
     #Works{
         padding-left: 75px;
         padding-right: 75px;
-        height: 1200px;
+        /* height: 1200px; */
     }
 }
 
@@ -43,6 +44,6 @@
     #Works{
         padding-left: 75px;
         padding-right: 75px;
-        height: 1000px;
+        /* height: 1000px; */
     }
 }
