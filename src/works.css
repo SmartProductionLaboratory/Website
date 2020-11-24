@@ -1,9 +1,9 @@
 #Works{
     background-color:#fff0bc6e;
-    height: 1000px;
+    height: 900px;
     padding-top: 30px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .title{
@@ -29,10 +29,20 @@
     }
 }
 
-@media (min-width:531px) and (max-width:800px){
+
+@media (min-width:531px) and (max-width:700px){
     #Works{
         padding-left: 75px;
         padding-right: 75px;
         height: 1200px;
+    }
+}
+
+
+@media (min-width:701px) and (max-width:800px){
+    #Works{
+        padding-left: 75px;
+        padding-right: 75px;
+        height: 1000px;
     }
 }

@@ -32,7 +32,7 @@ class UGstudents extends React.Component{
             <Container id="UndergraduateStudent" className="students">
                 <Row>
                     <Col>
-                        <Divider horizontal><h3>Undergraduate Students</h3></Divider>
+                        <Divider horizontal><h3>Undergraduate</h3></Divider>
                     </Col>
                 </Row>
                 <Row>

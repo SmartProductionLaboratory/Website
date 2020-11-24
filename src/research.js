@@ -30,7 +30,7 @@ class research extends React.Component{
     }
     render(){
     
-        if(this.state.width < 800){
+        if(this.state.width < 1200){
             return (
                 <div className="wbackground">
                     <Container id="research" fluid={true}>

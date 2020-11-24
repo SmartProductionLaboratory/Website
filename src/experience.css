@@ -14,6 +14,12 @@
     }
 }
 
+/* @media (max-width : 400px){
+    .experience{
+
+    }
+} */
+
 @media (min-width:280px) and (max-width:800px){
     .ExpTitle{
         text-align: center;
