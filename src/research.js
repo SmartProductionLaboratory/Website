@@ -18,7 +18,7 @@ class research extends React.Component{
             research :{
                 "Data Mining" : {
                     "title" : "Data Mining 資料探勘",
-                    "text" : "我們透過收集批貨於各站點的生產資料，進行資料篩選、遺漏值處理與資料分類等資料探勘的技術後建立良率預測模型，以分析影響批貨最終良率的因子，提升製造業生產線的良率。"
+                    "text" : "我們透過收集生產過程中批貨於各站點的生產資料，進行資料篩選、遺漏值處理與資料分類等資料探勘的技術後建立良率預測模型，以分析影響批貨最終良率的因子，提升製造業生產線的良率。"
                 },
                 "Scheduling" : {
                     "title" : "Scheduling 排程",

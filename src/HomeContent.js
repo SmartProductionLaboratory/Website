@@ -16,10 +16,12 @@ class Home extends React.Component{
                     <h1>智慧生產實驗室</h1>
                     <h2>Smart Production Laboratory</h2>
                     <br/><br/>
-                    <h4>National Cheng Kung University</h4>
-                    <p>
-                    Department of Computer Science and Infromation Engineering
-                    </p>
+                    <h3>National Cheng Kung University </h3>
+                    <h4>College of Electrical Engineering &#38; Computer Science</h4>
+                    <h5>lsInstitute of Manufacturing Information and Systems</h5>
+                    <h6>
+                        Department of Computer Science and Information Engineering
+                    </h6>
                 </Jumbotron>
                 <Research />
             </div>
