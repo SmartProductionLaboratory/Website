@@ -17,7 +17,7 @@ class ResearchInfo extends React.Component{
         this.state = {
             width : window.outerWidth,
             height : window.outerHeight,
-            researchInfo : ["生產規劃與排程", "資料挖礦與大數據分析", "萬用啟發式演算法", "先進製程控制", "決策分析"]
+            researchInfo : ["生產規劃與排程 Production planning and scheduling", "資料挖礦與大數據分析 Data mining and big data analysis", "萬用啟發式演算法 Metaheuristic algorithm", "先進製程控制 Advanced process control", "決策分析 Decision analysis"]
         }
     }
 
@@ -60,11 +60,9 @@ class ResearchInfo extends React.Component{
                         </Col>
                         <Col xs={7}>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>生產規劃與排程</ListGroup.Item>
-                                <ListGroup.Item>資料挖礦與大數據分析</ListGroup.Item>
-                                <ListGroup.Item>萬用啟發式演算法</ListGroup.Item>
-                                <ListGroup.Item>先進製程控制</ListGroup.Item>
-                                <ListGroup.Item>決策分析</ListGroup.Item>
+                                {this.state.researchInfo.map((value, index)=>{
+                                    return <ListGroup.Item>{value}</ListGroup.Item>
+                                })}
                             </ListGroup>
                         </Col>
                     </Row>
