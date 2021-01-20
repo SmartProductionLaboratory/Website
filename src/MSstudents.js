@@ -28,7 +28,7 @@ class MSstudents extends React.Component{
                         <Student img={jrimg} name={"梁哲榕"} engName={""}/>
                     </Col>
                     <Col>
-                        <Student img={pgimg} name={"李佩倚"} engName={""}/>
+                        <Student img={pgimg} name={"李沛倚"} engName={""}/>
                     </Col>
                     <Col>
                         <Student img={gcimg} name={"游智翔"} engName={""}/>
