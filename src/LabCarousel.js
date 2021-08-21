@@ -36,7 +36,7 @@ class LabCarousel extends React.Component{
               alt="Second slide"
             />
             <Carousel.Caption>
-              <h3>實驗室尾牙</h3>
+              <h3>實驗室聚餐</h3>
               {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
@@ -47,7 +47,7 @@ class LabCarousel extends React.Component{
               alt="Second slide"
             />
             <Carousel.Caption>
-              <h3>實驗室尾牙</h3>
+              <h3>實驗室聚餐</h3>
               {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
