@@ -24,8 +24,8 @@ class MSstudents extends React.Component{
                 {img : nckuimg, name : "唐嘉謙", engName: ""},
                 {img : nckuimg, name : "何立安", engName: ""},
                 {img : nckuimg, name : "陳藝丰", engName: ""},
-                {img : nckuimg, name : "王雅函", engName: ""},
                 {img : nckuimg, name : "李雅婷", engName: ""},
+                {img : nckuimg, name : "王雅函", engName: ""},
             ];
 
         
