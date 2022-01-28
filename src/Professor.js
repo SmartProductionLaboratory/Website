@@ -3,9 +3,9 @@ import Container from 'react-bootstrap/Container'
 import ProfessorImg from './Professor_img'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import './Professor.css'
+import './styles/Professor.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ResearchInfo from './ProfessorInfo'
+import ResearchInterest from './ResearchInterests.js'
 import { Icon, Divider } from 'semantic-ui-react'
 
 
@@ -14,8 +14,13 @@ class Professor extends React.Component{
         super(props);
         this.state = {
             width : window.outerWidth,
-            height : window.outerHeight
+            height : window.outerHeight,
+            phone : "06-2757575 ext 34220",
+            email : "hkwang@gs.ncku.edu.tw",
+            address : "701台南市東區大學路1號自強校區儀器設備大樓95602",
         }
+
+
     }
     updateDimensions = ()=>{
         this.setState({width: window.outerWidth, height: window.outereight})
@@ -41,19 +46,20 @@ class Professor extends React.Component{
                             <Col className="com-info">
                                 <div className="info-item">
                                     <label><Icon name='phone' /></label>
-                                    <span>06-2757575 ext 34220</span>
+                                    <span>{this.state.phone}</span>
                                 </div>
                                 <div className="info-item">
                                     <label><Icon name='mail' /></label>
-                                    <span>hkwang@gs.ncku.edu.tw</span>
+                                    <span>{this.state.email}</span>
                                 </div>
                                 <div className="info-item">
                                     <label><Icon name="location arrow"/></label>
-                                    <span>701台南市東區大學路1號自強校區儀器設備大樓95602</span>
+                                    <span>{this.state.address}</span>
                                 </div>
-                                <ResearchInfo/>
+                                <ResearchInterest/>
                             </Col>
                         </Row>
+
                         <Row>
                             <Col>
                                 <Divider/>
@@ -72,15 +78,15 @@ class Professor extends React.Component{
                         <Col className="com-info">
                             <div className="info-item">
                                 <label><Icon name='phone' /></label>
-                                <span>06-2757575 ext 34220</span>
+                                <span>{this.state.phone}</span>
                             </div>
                             <div className="info-item">
                                 <label><Icon name='mail' /></label>
-                                <span>hkwang@gs.ncku.edu.tw</span>
+                                <span>{this.state.email}</span>
                             </div>
                             <div className="info-item">
                                 <label><Icon name="location arrow"/></label>
-                                <span>701台南市東區大學路1號自強校區儀器設備大樓95602</span>
+                                <span>{this.state.address}</span>
                             </div>
                         </Col>
                     </Row>
@@ -90,7 +96,7 @@ class Professor extends React.Component{
                         </Col>
                     </Row>
                     <Row>
-                        <ResearchInfo/>
+                        <ResearchInterest/>
                     </Row>
                     <Row>
                         <Col>

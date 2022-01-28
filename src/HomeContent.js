@@ -1,18 +1,10 @@
 import React from 'react';
-import Nvbar from './Nvbar';
-import './HomeContent.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button'
-import Background from './imgs/DSC00094.png'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Research from './research.js'
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
-class Home extends React.Component{
-    render(){
+class HomeContent extends React.Component{
+    render() {
         return (
-            <div id="Home" style={{backgroundImage:`url(${Background})`}}>
-                <Nvbar />
-                <Jumbotron id="jumbotron" style={{backgroundColor:"transparent", textAlign:"center"}}>
+            <Jumbotron id="jumbotron" style={{backgroundColor:"transparent", textAlign:"center"}}>
                     <h1>智慧生產實驗室</h1>
                     <h2>Smart Production Laboratory</h2>
                     <br/><br/>
@@ -23,10 +15,8 @@ class Home extends React.Component{
                         Department of Computer Science and Information Engineering
                     </h6>
                 </Jumbotron>
-                <Research />
-            </div>
-        ); 
+);
     }
 }
 
-export default Home
+export default HomeContent;

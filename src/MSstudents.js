@@ -4,15 +4,34 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Table from 'react-bootstrap/Table'
 import { Divider } from 'semantic-ui-react'
-import './MSstudents.css'
-import jrimg from './imgs/jrimg.png'
-import gcimg from './imgs/gcimg.png'
-import pgimg from './imgs/IMG_0256.png'
+import './styles/MSstudents.css'
+import jrimg from './imgs/zrl.png'
+import gcimg from './imgs/jc.png'
+import pgimg from './imgs/pg.png'
+import nckuimg from './imgs/NCKU.png'
 import Student from './student'
 
 class MSstudents extends React.Component{
     constructor(props){
         super(props);
+
+        let students = [ 
+                {img : jrimg, name : "梁哲榕", engName: ""},
+                {img : pgimg, name : "李沛倚", engName: ""},
+                {img : gcimg, name : "游智翔", engName: ""},
+                {img : nckuimg, name : "黃偉哲", engName: ""},
+                
+                {img : nckuimg, name : "唐嘉謙", engName: ""},
+                {img : nckuimg, name : "何立安", engName: ""},
+                {img : nckuimg, name : "陳藝丰", engName: ""},
+                {img : nckuimg, name : "王雅函", engName: ""},
+                {img : nckuimg, name : "李雅婷", engName: ""},
+            ];
+
+        
+        this.state = {
+            students : students
+        }
     }
 
     render(){
@@ -24,16 +43,11 @@ class MSstudents extends React.Component{
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
-                        <Student img={jrimg} name={"梁哲榕"} engName={""}/>
-                    </Col>
-                    <Col>
-                        <Student img={pgimg} name={"李沛倚"} engName={""}/>
-                    </Col>
-                    <Col>
-                        <Student img={gcimg} name={"游智翔"} engName={""}/>
-                    </Col>
-                    
+                    {this.state.students.map((value, index)=>{
+                        return <Col>
+                                <Student img={value.img} name={value.name} engName={value.engName}/>
+                            </Col>
+                    })}
                 </Row>
             </Container>
         </>);

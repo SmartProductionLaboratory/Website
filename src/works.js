@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Table from 'react-bootstrap/Table'
 import { Divider } from 'semantic-ui-react'
-import "./works.css"
+import "./styles/Works.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

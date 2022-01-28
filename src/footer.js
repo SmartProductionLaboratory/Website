@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import './footer.css'
+import './styles/footer.css'
 import reactLogo from './imgs/logo192.png'
 import reactBootstreapLogo from './imgs/react-bootstrap.svg'
 

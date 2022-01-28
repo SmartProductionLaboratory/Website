@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import 'semantic-ui-css/semantic.min.css'
 import App from './App';
-import Home from './HomeContent'
+import Home from './Home'
 import Professor from './Professor'
-import Works from './works'
+import Works from './Works'
 import Experience from './experience'
 import MSstudent from './MSstudents'
 import UGstudent from './UGstudent'
@@ -17,7 +17,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     {/* <App />, */}
-    <Home />
+    <Home/>
     <Works/>
     <Professor/>
     <Experience/>

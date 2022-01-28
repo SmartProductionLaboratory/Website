@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProfessorImg.css'
+import './styles/ProfessorImg.css'
 import ProImg from './imgs/121112589_3501074339951561_6230830862392965608_n.jpg'
 import ProImg2 from './imgs/teacher91.jpg'
 import Professor from './Professor';

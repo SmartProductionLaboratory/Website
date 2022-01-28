@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import {Image} from 'semantic-ui-react'
-import "./description.css"
+import "./styles/description.css"
 
 class Description extends React.Component{
     constructor(props){

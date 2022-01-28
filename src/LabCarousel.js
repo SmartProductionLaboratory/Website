@@ -4,53 +4,37 @@ import LabPhoto1 from './imgs/labPhoto1.jpg'
 import LabPhoto2 from './imgs/labPhoto2.jpg'
 import LabPhoto3 from './imgs/labPhoto3.jpg'
 
-import './LabCarouse.css'
+import './styles/LabCarouse.css'
 
 class LabCarousel extends React.Component{
   constructor(props){
     super(props);
+    let items = [
+        { title:"實驗室聚餐", src:LabPhoto1},
+        { title:"實驗室聚餐", src:LabPhoto2},
+        { title:"實驗室聚餐", src:LabPhoto3}
+    ]
+
     this.state = {
-      index : 0,
-      
+        carousel_items : items 
     }
   }
     
   render(){
     return (
         <Carousel id="photos">
-          <Carousel.Item>
+        {this.state.carousel_items.map((value, index)=>{
+            return <Carousel.Item>
             <img
               className="d-block w-100"
-              src={LabPhoto1}
-              alt="First slide"
+              src={value.src}
+              alt="slide"
             />
             <Carousel.Caption>
-              <h3>實驗室聚餐</h3>
-              {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+              <h3>{value.title}</h3>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={LabPhoto2}
-              alt="Second slide"
-            />
-            <Carousel.Caption>
-              <h3>實驗室聚餐</h3>
-              {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={LabPhoto3}
-              alt="Second slide"
-            />
-            <Carousel.Caption>
-              <h3>實驗室聚餐</h3>
-              {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-            </Carousel.Caption>
-          </Carousel.Item>
+        })}
         </Carousel>
       );
     }

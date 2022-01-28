@@ -6,7 +6,7 @@ import { List } from 'semantic-ui-react'
 import ListGroup from 'react-bootstrap/ListGroup'
 
 
-import "./experience.css"
+import "./styles/experience.css"
 
 
 
@@ -16,8 +16,19 @@ class Experience extends React.Component{
         this.state = {
             width: window.outerWidth,
             height: window.outerHeight,
-            researchExp : [`德國哈根大學 博士後研究員2017`, `國立清華大學 工業工程與管理博士班2016`,`國立清華大學 工業工程與管理碩士班2010`,`國立交通大學 工業工程與管理學系2008`],
-            workExp : [`國立成功大學製造資訊與系統研究所助理教授2020`,`逢甲大學工業工程與管理學系助理教授 2018`, `裕隆汽車製造股份有限公司工業工程師 2012`, `台灣積體電路製造股份有限公司製造部課長 2011`]
+            researchExp : [
+                `德國哈根大學 博士後研究員 2017`, 
+                `國立清華大學 工業工程與管理博士班 2016`,
+                `國立清華大學 工業工程與管理碩士班 2010`,
+                `國立交通大學 工業工程與管理學系 2008`
+            ],
+
+            workExp : [
+                `國立成功大學製造資訊與系統研究所助理教授 2020`,
+                `逢甲大學工業工程與管理學系助理教授 2018`, 
+                `裕隆汽車製造股份有限公司工業工程師 2012`, 
+                `台灣積體電路製造股份有限公司製造部課長 2011`
+            ]
         }
     }
 
@@ -41,16 +52,6 @@ class Experience extends React.Component{
                             </ListGroup>
                         </Col>
                     </Row>
-                    {/* <Row>
-                        <Col>
-                            <h2 className="ExpTitle">工作經歷</h2>
-                            <ListGroup variant="flush">
-                                {this.state.workExp.map((value, index)=>{
-                                    return <ListGroup.Item>{value}</ListGroup.Item>
-                                })}
-                            </ListGroup>
-                        </Col>
-                    </Row> */}
                 </Container>
             );
         }else{

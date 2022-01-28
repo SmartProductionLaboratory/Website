@@ -8,16 +8,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Divider, List } from 'semantic-ui-react'
 
 
-import './ProfessorInfo.css'
+import './styles/ResearchInterests.css'
 
 
-class ResearchInfo extends React.Component{
+class ResearchInterests extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             width : window.outerWidth,
             height : window.outerHeight,
-            researchInfo : ["生產規劃與排程 Production planning and scheduling", "資料挖礦與大數據分析 Data mining and big data analysis", "萬用啟發式演算法 Metaheuristic algorithm", "先進製程控制 Advanced process control", "決策分析 Decision analysis"]
+            researchInfo : [
+                "生產規劃與排程 Production planning and scheduling", 
+                "資料挖礦與大數據分析 Data mining and big data analysis", 
+                "萬用啟發式演算法 Metaheuristic algorithm", 
+                "先進製程控制 Advanced process control", 
+                "決策分析 Decision analysis",
+                // "金門旅遊 Kinmen Tourism Guildline"
+            ]
         }
     }
 
@@ -74,4 +81,4 @@ class ResearchInfo extends React.Component{
     }
 }
 
-export default ResearchInfo;
+export default ResearchInterests;
