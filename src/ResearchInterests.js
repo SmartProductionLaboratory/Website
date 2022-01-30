@@ -23,7 +23,7 @@ class ResearchInterests extends React.Component{
                 "萬用啟發式演算法 Metaheuristic algorithm", 
                 "先進製程控制 Advanced process control", 
                 "決策分析 Decision analysis",
-                // "金門旅遊 Kinmen Tourism Guildline"
+                // "金門旅遊 Kinmen Tourism Guideline"
             ]
         }
     }
