@@ -427,4 +427,22 @@ $> serve ./build
 
 ### Nginx
 
-TO BE DONE
+`nginx` 是用來做反向代理，可以將`splab.imis.ncku.edu.tw`轉至`localhost`或是其他電腦的port
+
+Install nginx if needed:
+
+```shell=
+$> sudo apt-get install nginx
+```
+
+將`default.conf`複製(取代)`/etc/nginx/conf.d/default.conf`
+
+```shell=
+sudo cp default.conf /etc/nginx/conf.d/default.conf
+```
+
+接著將`nginx`服務重啟
+
+```shell=
+/etc/init.d/nginx reload
+```
