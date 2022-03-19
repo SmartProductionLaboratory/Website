@@ -14,7 +14,6 @@ import annieimg from './imgs/annie.png'
 import tiffanyimg from './imgs/tiffany.png'
 import gcimg from './imgs/jc.png'
 import pgimg from './imgs/pg.png'
-import lianimg from './imgs/lian.png'
 import nckuimg from './imgs/NCKU.png'
 import Student from './student'
 
