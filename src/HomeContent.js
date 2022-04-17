@@ -10,7 +10,7 @@ class HomeContent extends React.Component{
                     <br/><br/>
                     <h3>National Cheng Kung University </h3>
                     <h4>College of Electrical Engineering &#38; Computer Science</h4>
-                    <h5>lsInstitute of Manufacturing Information and Systems</h5>
+                    <h5>Institute of Manufacturing Information and Systems</h5>
                     <h6>
                         Department of Computer Science and Information Engineering
                     </h6>
