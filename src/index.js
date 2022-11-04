@@ -22,7 +22,6 @@ ReactDOM.render(
     <Professor/>
     <Experience/>
     <MSstudent/>
-    <UGstudent/>
     <LabCarousel/>
     <Footer/>
   </React.StrictMode>,
