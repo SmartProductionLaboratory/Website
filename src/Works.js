@@ -51,7 +51,6 @@ class Works extends React.Component{
             <Table striped bordered hover>
                 <thead>
                     <tr>
-		<th>#</th>
                         <th>合作單位</th>
                         <th>計劃名稱</th>
 			<th>職務</th>
@@ -61,7 +60,6 @@ class Works extends React.Component{
                 <tbody>
                 {this.state.projects.map((value, index)=>{
                     return (<tr>
-			 <td>{index+1}</td>
                         <td>{value[0]}</td>
                         <td>{value[1]}</td>
                         <td>{value[2]}</td>
